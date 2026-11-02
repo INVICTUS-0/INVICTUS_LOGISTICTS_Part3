@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://invictus-logistics.netlify.app/sitemap.xml

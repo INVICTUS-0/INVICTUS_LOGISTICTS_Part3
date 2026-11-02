@@ -1,0 +1,124 @@
+{
+  "_note": "Illustrative prices in South African Rand (ZAR) for the assignment demo.",
+  "rates": {
+    "bay": {
+      "label": "Port & Bay Hauling",
+      "base": 1800,
+      "perKg": 1.2,
+      "leadDays": 2
+    },
+    "airport": {
+      "label": "Airport Hauling",
+      "base": 1500,
+      "perKg": 2.4,
+      "leadDays": 1
+    },
+    "mine": {
+      "label": "Mine Hauling",
+      "base": 3500,
+      "perKg": 0.8,
+      "leadDays": 3
+    }
+  },
+  "catalogue": [
+    {
+      "id": 1,
+      "category": "bay",
+      "name": "20ft container haul",
+      "description": "Standard 20ft container collected from the port or bay and delivered to your warehouse.",
+      "fromPrice": 3200,
+      "turnaround": "Pickup in 2 days",
+      "keywords": "container shipping port 20ft"
+    },
+    {
+      "id": 2,
+      "category": "bay",
+      "name": "40ft container haul",
+      "description": "Full 40ft container transport with coordination around vessel release and clearing agents.",
+      "fromPrice": 4800,
+      "turnaround": "Pickup in 2 days",
+      "keywords": "container shipping port 40ft"
+    },
+    {
+      "id": 3,
+      "category": "bay",
+      "name": "Palletised & break-bulk cargo",
+      "description": "Loose or palletised goods collected from the terminal and delivered onward to retail or distribution sites.",
+      "fromPrice": 2100,
+      "turnaround": "Pickup in 2 days",
+      "keywords": "pallets break-bulk loose goods retail"
+    },
+    {
+      "id": 4,
+      "category": "bay",
+      "name": "Bonded cargo transfer",
+      "description": "Customs-bonded cargo moved between port, bonded warehouse and your premises.",
+      "fromPrice": 3900,
+      "turnaround": "Pickup in 3 days",
+      "keywords": "bonded customs warehouse clearing"
+    },
+    {
+      "id": 5,
+      "category": "airport",
+      "name": "Priority air freight collection",
+      "description": "Time-sensitive air cargo collected with priority handling and delivered directly to you.",
+      "fromPrice": 1900,
+      "turnaround": "Pickup next day",
+      "keywords": "air freight urgent priority express"
+    },
+    {
+      "id": 6,
+      "category": "airport",
+      "name": "Temperature-aware cargo",
+      "description": "Perishable and sensitive goods handled with temperature awareness on request.",
+      "fromPrice": 2600,
+      "turnaround": "Pickup next day",
+      "keywords": "perishable cold chain fresh temperature food medical"
+    },
+    {
+      "id": 7,
+      "category": "airport",
+      "name": "Urgent spare parts",
+      "description": "Machine and vehicle spare parts moved from the terminal to the workshop or site fast.",
+      "fromPrice": 1700,
+      "turnaround": "Pickup next day",
+      "keywords": "spare parts machinery urgent workshop"
+    },
+    {
+      "id": 8,
+      "category": "mine",
+      "name": "Bulk material haul",
+      "description": "Bulk material and ore-adjacent cargo moved from mine sites using the right vehicle for the load.",
+      "fromPrice": 5200,
+      "turnaround": "Pickup in 3 days",
+      "keywords": "bulk ore aggregate coal sand material"
+    },
+    {
+      "id": 9,
+      "category": "mine",
+      "name": "Heavy equipment relocation",
+      "description": "Relocation of heavy mining equipment between sites with route planning for access roads.",
+      "fromPrice": 8500,
+      "turnaround": "Pickup in 3 days",
+      "keywords": "heavy equipment machinery relocation abnormal load"
+    },
+    {
+      "id": 10,
+      "category": "mine",
+      "name": "Mine supplies delivery",
+      "description": "Consumables, tools and supplies delivered to remote mine sites on a schedule.",
+      "fromPrice": 3600,
+      "turnaround": "Pickup in 3 days",
+      "keywords": "supplies consumables tools regular schedule"
+    }
+  ],
+  "shipments": {
+    "INV-2026-00184": {
+      "service": "Port & Bay Hauling",
+      "from": "City Deep Port",
+      "to": "Sandton Warehouse",
+      "stage": 2,
+      "dates": ["10 Aug 2026", "11 Aug 2026", "12 Aug 2026", null, null, null]
+    }
+  }
+}

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link the external stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Services | INVICTUS Logistics</title>
+
+    <meta
+      name="description"
+      content="Hauling services from ports and bays, airports, and mine sites, offered by INVICTUS Logistics." />
+
+    <link
+      rel="canonical"
+      href="https://invictus-logistics.netlify.app/services.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="INVICTUS Logistics" />
+    <meta property="og:title" content="Services | INVICTUS Logistics" />
+    <meta
+      property="og:description"
+      content="Hauling services from ports and bays, airports, and mine sites, offered by INVICTUS Logistics." />
+    <meta
+      property="og:url"
+      content="https://invictus-logistics.netlify.app/services.html" />
+    <meta
+      property="og:image"
+      content="https://invictus-logistics.netlify.app/images/hero_2.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <script src="js/jscript.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="images/logo.svg" alt="INVICTUS Logistics logo" />
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu"
+        ><span></span
+      ></label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="enquiry.html">Get a Quote</a></li>
+          <li><a href="track.html">Track Shipment</a></li>
+
+          <li><a href="index.html#account">Login / Register</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#account" class="nav-cta">Login / Register</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img
+          src="images/trucks.jpg"
+          alt="INVICTUS Logistics trucks and cargo operations"
+          class="hero-bg"
+          fetchpriority="high" />
+        <div class="hero-content">
+          <h1>Our Services</h1>
+          <p>
+            Three pickup points. One reliable process from booking to delivery.
+          </p>
+        </div>
+      </section>
+
+      <!-- These let the user click straight to the services they desire, instead of scrolling through all three.-->
+
+      <nav>
+        <ul>
+          <li><a href="#bay">Bay &amp; Ports Hauling</a></li>
+          <li><a href="#airports">Airports Hauling</a></li>
+          <li><a href="#mines">Mine Sites</a></li>
+        </ul>
+      </nav>
+
+      <!-- Service 1: Bay & Ports Hauling -->
+      <!-- id="bay" is the target for the jump link above and for the
+        "Learn more" link on the homepage services snapshot -->
+
+      <section id="bay">
+        <h2>Bay &amp; Ports Hauling</h2>
+        <img
+          class="gallery-img"
+          loading="lazy"
+          src="images/offload_dock.png"
+          alt="Truck carrying a shipping container at a port loading bay" />
+
+        <p>
+          We collect container and bulk cargo directly from the port or bay,
+          coordinated around vessel arrival and clearance schedules so your
+          goods move as soon as they&rsquo;re released.
+        </p>
+
+        <ul>
+          <li>Container and break-bulk cargo collection</li>
+          <li>Coordination with clearing agents and terminal schedules</li>
+          <li>
+            Onward delivery to warehouse, retail site or distribution point
+          </li>
+        </ul>
+      </section>
+
+      <!-- Service 2: Airports Hauling -->
+      <section id="airports">
+        <h2>Airports Hauling</h2>
+        <img
+          class="gallery-img"
+          loading="lazy"
+          src="images/cargo_airport.png"
+          alt="Cargo being loaded onto a truck on an airport tarmac" />
+
+        <p>
+          Time-sensitive air freight is collected with priority handling and
+          moved directly to its next destination, minimising the time cargo
+          spends sitting at the terminal.
+        </p>
+
+        <ul>
+          <li>Priority collection for time-sensitive cargo</li>
+          <li>Temperature-aware handling on request</li>
+          <li>Direct delivery to warehouse or end client</li>
+        </ul>
+      </section>
+
+      <!-- Service 3: Mine Sites -->
+      <section id="mines">
+        <h2>Mine Sites</h2>
+        <img
+          class="gallery-img"
+          loading="lazy"
+          src="images/mine.png"
+          alt="Haul truck being loaded with mined material at a mine site" />
+        <p>
+          We transport bulk material and equipment from mine sites, matching
+          each load to the right vehicle so nothing is over- or under-utilised.
+        </p>
+
+        <ul>
+          <li>Bulk material and ore-adjacent cargo transport</li>
+          <li>Heavy equipment relocation between sites</li>
+          <li>Route planning suited to mine-access roads</li>
+        </ul>
+      </section>
+
+      <section id="catalogue">
+        <h2>Find the Right Service</h2>
+        <p>Search our cargo types, filter by pickup point and sort by price.</p>
+        <div class="toolbar">
+          <div>
+            <label for="catSearch">Search</label>
+            <input
+              type="search"
+              id="catSearch"
+              placeholder="e.g. container, ore, perishable" />
+          </div>
+          <div>
+            <label for="catCategory">Pickup point</label>
+            <select id="catCategory">
+              <option value="all">All services</option>
+              <option value="bay">Port &amp; Bay</option>
+              <option value="airport">Airport</option>
+              <option value="mine">Mine</option>
+            </select>
+          </div>
+          <div>
+            <label for="catSort">Sort by</label>
+            <select id="catSort">
+              <option value="name-asc">Name (A&ndash;Z)</option>
+              <option value="price-asc">Price (low to high)</option>
+              <option value="price-desc">Price (high to low)</option>
+            </select>
+          </div>
+        </div>
+        <p id="catCount" aria-live="polite"></p>
+        <div id="catList" class="cat-grid"></div>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <h3>
+              <button
+                type="button"
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="faq1">
+                How quickly can you collect my cargo?
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq1">
+              <p>
+                Most port and mine pickups are arranged within two to three days
+                of confirming your quote. Airport cargo can be collected the
+                next day, and priority delivery shortens that by a further day.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button
+                type="button"
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="faq2">
+                How is the price worked out?
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq2">
+              <p>
+                Every job has a base charge plus a rate per kilogram, which
+                depends on the service. Distance, site access and special
+                handling can adjust the final price, which we confirm by email.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button
+                type="button"
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="faq3">
+                Do you move small shipments?
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq3">
+              <p>
+                Yes. We built INVICTUS for small and growing businesses, so
+                there are no minimum contract sizes.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button
+                type="button"
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="faq4">
+                Can I track my cargo?
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq4">
+              <p>
+                Yes. Enter your shipment reference on the Track Shipment page to
+                see which stage your cargo has reached.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Not Sure Which Services Fits Your Cargo?</h2>
+        <p>
+          Contact us and we&rsquo;ll help you find the right solution for your
+          cargo, whether it&rsquo;s a single shipment or a regular delivery
+          schedule.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Talk to Us</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 INVICTUS Logistics. All rights reserved.</p>
+      <address>
+        Pretoria, Gauteng<br />
+        <a href="mailto:info@invictuslogistics.co.za"
+          >info@invictuslogistics.co.za</a
+        ><br />
+        <a href="tel:+27721385814">+27 72 138 5814</a>
+      </address>
+    </footer>
+  </body>
+</html>

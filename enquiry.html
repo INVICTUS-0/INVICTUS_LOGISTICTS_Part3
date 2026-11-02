@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link the external stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>
+      Enquire &amp; Get an Instant Freight Estimate | INVICTUS Logistics
+    </title>
+
+    <meta
+      name="description"
+      content="Enquire about port, airport or mine hauling in Gauteng and get an instant cost estimate and earliest pickup date from INVICTUS Logistics." />
+
+    <link
+      rel="canonical"
+      href="https://invictus-logistics.netlify.app/enquiry.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="INVICTUS Logistics" />
+    <meta
+      property="og:title"
+      content="Enquire &amp; Get an Instant Freight Estimate | INVICTUS Logistics" />
+    <meta
+      property="og:description"
+      content="Enquire about port, airport or mine hauling in Gauteng and get an instant cost estimate and earliest pickup date from INVICTUS Logistics." />
+    <meta
+      property="og:url"
+      content="https://invictus-logistics.netlify.app/enquiry.html" />
+    <meta
+      property="og:image"
+      content="https://invictus-logistics.netlify.app/images/hero_2.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <script src="js/jscript.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="images/logo.svg" alt="INVICTUS Logistics logo" />
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu"
+        ><span></span
+      ></label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="enquiry.html">Get a Quote</a></li>
+          <li><a href="track.html">Track Shipment</a></li>
+          <li><a href="index.html#account">Login / Register</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#account" class="nav-cta">Login / Register</a>
+    </header>
+    <main>
+      <section>
+        <h1>Enquire About a Shipment</h1>
+        <p>
+          Tell us about your cargo and get an instant estimate of cost and
+          earliest pickup. We confirm the final price by email.
+        </p>
+      </section>
+
+      <!-- Quote Form 
+         action="#" is a placeholder. method="post" is used (instead of "get") because this form
+         submits personal and cargo details, which shouldn't appear
+         in the page URL.-->
+      <form id="enquiryForm" action="#" method="post" novalidate>
+        <!--Fieldset 1: CUSTOMER DETAILS
+                <fieldset> groups related fields together, and <legend>
+                gives that group a visible, accessible heading.-->
+
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <label for="fullName">Full name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            data-type="name"
+            required />
+
+          <label for="email">Email address</label>
+
+          <!-- type="email" makes the browser check it looks like a
+                    valid email address before the form can be submitted -->
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="company">Company name (optional)</label>
+
+          <!-- No 'required' here, since not every customer has a company -->
+          <input type="text" id="company" name="company" />
+        </fieldset>
+
+        <!-- Fieldset 2: CARGO DETAILS -->
+        <fieldset>
+          <legend>Cargo Details</legend>
+
+          <label for="serviceType">Service type</label>
+
+          <!-- A dropdown restricts the answer to one of our three
+                    actual services, avoiding typos or mismatched requests -->
+          <select id="serviceType" name="serviceType" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="bay">Port &amp; Bay Hauling</option>
+            <option value="airport">Airport Hauling</option>
+            <option value="mine">Mine Hauling</option>
+          </select>
+
+          <label for="cargoDescription">Cargo description</label>
+
+          <!-- <textarea> instead of <input> because this answer can
+                    be several sentences long -->
+          <textarea
+            id="cargoDescription"
+            name="cargoDescription"
+            rows="4"
+            minlength="10"
+            required
+            placeholder="e.g. 2 pallets of packaged goods, 500kg total"></textarea>
+
+          <label for="weight">Estimated weight (kg)</label>
+
+          <!-- type="number" plus min="1" stops negative or zero weights -->
+          <input
+            type="number"
+            id="weight"
+            name="weight"
+            min="1"
+            max="40000"
+            required />
+
+          <label for="dimensions">Dimensions, L x W x H, cm (optional)</label>
+          <input
+            type="text"
+            id="dimensions"
+            name="dimensions"
+            placeholder="e.g. 120 x 80 x 100" />
+        </fieldset>
+
+        <!-- fieldset 3: PICKUP AND DELIVERY -->
+        <fieldset>
+          <legend>Pickup &amp; Delivery</legend>
+
+          <label for="pickupLocation">Pickup location</label>
+          <input
+            type="text"
+            id="pickupLocation"
+            name="pickupLocation"
+            required />
+
+          <label for="dropoffLocation">Drop-off location</label>
+          <input
+            type="text"
+            id="dropoffLocation"
+            name="dropoffLocation"
+            required />
+
+          <label for="pickupDate">Preferred pickup date</label>
+
+          <!-- type="date" gives the customer a calendar picker in
+                    most browsers, and prevents badly formatted dates -->
+          <input type="date" id="pickupDate" name="pickupDate" />
+
+          <label for="speed">Delivery speed</label>
+          <select id="speed" name="speed" required>
+            <option value="standard" selected>Standard</option>
+            <option value="priority">Priority (+25%)</option>
+          </select>
+
+          <label for="notes">Additional notes (optional)</label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </fieldset>
+
+        <!-- Submitting sends all the fields above in one go -->
+        <button type="submit">Submit Enquiry</button>
+        <p>
+          We typically respond with a quote within one business day by email.
+        </p>
+      </form>
+      <section
+        id="enquiryResult"
+        class="result-panel"
+        tabindex="-1"
+        aria-live="polite"
+        hidden></section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 INVICTUS Logistics. All rights reserved.</p>
+      <address>
+        Pretoria, Gauteng<br />
+        <a href="mailto:info@invictuslogistics.co.za"
+          >info@invictuslogistics.co.za</a
+        ><br />
+        <a href="tel:+27721385814">+27 72 138 5814</a>
+      </address>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link the external stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Track Shipment | INVICTUS Logistics</title>
+
+    <meta
+      name="description"
+      content="Track the status of your cargo with INVICTUS Logistics using your shipment reference number." />
+
+    <link
+      rel="canonical"
+      href="https://invictus-logistics.netlify.app/track.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="INVICTUS Logistics" />
+    <meta property="og:title" content="Track Shipment | INVICTUS Logistics" />
+    <meta
+      property="og:description"
+      content="Track the status of your cargo with INVICTUS Logistics using your shipment reference number." />
+    <meta
+      property="og:url"
+      content="https://invictus-logistics.netlify.app/track.html" />
+    <meta
+      property="og:image"
+      content="https://invictus-logistics.netlify.app/images/hero_2.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <script src="js/jscript.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="images/logo.svg" alt="INVICTUS Logistics logo" />
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu"
+        ><span></span
+      ></label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="enquiry.html">Get a Quote</a></li>
+          <li><a href="track.html">Track Shipment</a></li>
+          <li><a href="index.html#account">Login / Register</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#account" class="nav-cta">Login / Register</a>
+    </header>
+
+    <main>
+      <section class="hero">
+  <img
+    src="images/track_shipment.jpg"
+    alt="Container ship at sea"
+    class="hero-bg"
+    fetchpriority="high" />
+
+  <div class="track-card">
+    <h1>Track Your Shipment</h1>
+    <p>Enter your shipment reference number to see its current status.</p>
+
+    <form id="trackForm" class="track-form" action="#" method="get" novalidate>
+      <div class="track-field">
+        <label for="trackingRef" class="sr-only">Shipment reference number</label>
+        <input
+          type="text"
+          id="trackingRef"
+          name="ref"
+          data-type="ref"
+          placeholder="e.g. INV-2026-00184"
+          required />
+      </div>
+      <button type="submit">Track Now</button>
+    </form>
+  </div>
+</section>
+
+      <!-- Example of how the tracking results might be displayed -->
+      <section
+        class="tracking-result"
+        id="trackResult"
+        tabindex="-1"
+        aria-live="polite">
+        <h2>Shipment INV-2026-00184</h2>
+        <p>
+          Service: Port &amp; Bay Hauling &middot; From: City Deep Port &middot;
+          To: Sandton Warehouse
+        </p>
+
+        <!-- An ordered list is used because these stages happen in a
+                 fixed sequence, one after another -->
+        <ol class="timeline">
+          <li>Booked &mdash; 10 Aug 2026</li>
+          <li>Picked up &mdash; 11 Aug 2026</li>
+          <li class="current">
+            In transit &mdash; 12 Aug 2026 (current stage)
+          </li>
+          <li>Customs / gate clearance &mdash; pending</li>
+          <li>Out for delivery &mdash; pending</li>
+          <li>Delivered &mdash; pending</li>
+        </ol>
+
+        <p>
+          <em
+            >This is a sample result shown for layout purposes only. Live
+            tracking is connected once functionality is added to this
+            project.</em
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 INVICTUS Logistics. All rights reserved.</p>
+      <address>
+        Pretoria, Gauteng<br />
+        <a href="mailto:info@invictuslogistics.co.za"
+          >info@invictuslogistics.co.za</a
+        ><br />
+        <a href="tel:+27721385814">+27 72 138 5814</a>
+      </address>
+    </footer>
+  </body>
+</html>
